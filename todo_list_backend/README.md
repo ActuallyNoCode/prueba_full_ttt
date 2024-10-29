@@ -59,16 +59,6 @@ $ npm run start:dev
 
 Nest is [MIT licensed](LICENSE).
 
-## Decisiones Técnicas
+## Swagger Docs
 
-- `Autenticación y Autorización Sólida`: Al implementar un sistema de autenticación basado en JWT y asegurarte de que los usuarios solo pueden ver y modificar sus propias tareas, garantizas la seguridad y privacidad de los datos. Esto también evita accesos no autorizados y mejora la confianza de los usuarios.
-
-- `Control de Acceso Basado en Roles y Permisos`: Configurar el sistema para validar que cada usuario solo tenga acceso a sus propias tareas refuerza la seguridad y la integridad de los datos. Este control granular en el acceso a las entidades mejora la organización y permite una futura escalabilidad si necesitas manejar roles de usuario adicionales.
-
-- `Uso de Consultas Optimizadas`: La implementación de consultas avanzadas en findAll, que incluyen filtros opcionales para búsqueda y estado de las tareas, mejora la flexibilidad de la aplicación. Esto permite a los usuarios buscar tareas específicas de manera eficiente y personalizar su experiencia de acuerdo a sus necesidades.
-
-- `Modularidad y Reutilización de Componentes`: Al estructurar el código en servicios y controladores, y separar las entidades y DTOs (Data Transfer Objects), logras una arquitectura modular y fácil de mantener. Esto facilita la futura extensión de funcionalidades y la reducción de código duplicado, optimizando el tiempo de desarrollo y mantenimiento.
-
-- `Validación de Datos y Manejo de Excepciones`: La verificación de la existencia del usuario y de cada tarea antes de realizar operaciones como creación, actualización o eliminación minimiza errores y previene excepciones no controladas. Esto resulta en una aplicación más robusta y reduce el riesgo de fallos en producción.
-
-- `Implementación Guardias de Seguridad`: La decisión de aplicar UseGuards y configuraciones de seguridad en los controladores asegura que solo los usuarios autenticados puedan acceder a ciertas rutas, lo cual es crucial para proteger los recursos sensibles.
+Experimental / Unfinished version of api reference is on /docs
